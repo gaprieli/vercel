@@ -18,7 +18,7 @@ export default class AlunoController{
     }
     this.list = async(req,res)=>{
         const resultado = await Aluno.find({})
-        res.render(caminhoBase + 'list', {Alunos: resultado});
+        res.render(caminhoBase + 'lst', {Alunos: resultado});
     }
     }
 }
