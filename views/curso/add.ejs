@@ -1,0 +1,25 @@
+<%-include('../cabecalho.ejs')%>
+<h1>Adicionar Curso</h1>
+<div>
+
+</div>
+<div>
+    <form method="post">
+        <label> Nome: </label>
+        <input type="text" name="nome"><br>
+        <label> Area: </label>
+        <input type="text" name="area"><br>
+         <label> Ano Fundação: </label>
+        <input type="text" name="anofundacao"><br>
+        <label> Nível: </label>
+            <select name="nivel"><br>
+                <option value="">Selecione</option>
+                <option value="Técnico">Técnico</option>
+                <option value="Tecnólogo">Tecnólogo</option>
+                <option value="Bacharelado">Bacharelado</option>
+            </select>
+            </label><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+<%-include('../rodape.ejs')%>

@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import routes from './routes/route.js'; // rotas externas
 import alunoRoutes from './routes/AlunoRoutes.js';
+import cursoRoutes from './routes/CursoRoutes.js';
 
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(express.static(join(__dirname, '/public')));
 app.set('views', join(__dirname, '/views'));
 
 // Rotas
+app.use(cursoRoutes)
 app.use(routes)
 app.use(alunoRoutes)
 app.listen(3001)
